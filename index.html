@@ -96,7 +96,7 @@
 <body>
   <header>
     <h1>Europe 2025: Travel Guide</h1>
-    <p>This document is a draft itinerary for our Purcell Family trip. Stay tuned for updates on accommodations, flights, transfers, and more.</p>
+    <p>This document is a draft itinerary for our Purcell Family trip. Stay tuned for updates on flights, accommodations, transfers, and more.</p>
   </header>
   
   <!-- Navigation Symboxes -->
@@ -104,23 +104,23 @@
     <div class="symbox">
       <div style="font-size: 40px;">🏨</div>
       <h3>Accommodation</h3>
-      <p>Hotel and stay details coming soon.</p>
+      <p>Hotel and stay details for each destination.</p>
     </div>
     <div class="symbox">
       <div style="font-size: 40px;">✈️</div>
       <h3>Flight</h3>
-      <p>Complete flight schedules and booking info.</p>
+      <p>Flight schedules and booking info.</p>
     </div>
     <div class="symbox">
       <div style="font-size: 40px;">🚌</div>
       <h3>Transfer</h3>
-      <p>Private transfers and transport options.</p>
+      <p>Private transfers and transport details.</p>
     </div>
   </nav>
   
   <main>
     <!-- Flight Itinerary Section -->
-    <section>
+    <section id="flight-itinerary">
       <h2>Flight Itinerary</h2>
       <table>
         <caption>Sydney to Barcelona ✈️</caption>
@@ -227,61 +227,145 @@
       </table>
     </section>
     
+    <!-- Accommodation Details Section -->
+    <section id="accommodations">
+      <h2>Accommodation Details</h2>
+      
+      <!-- Barcelona Accommodations -->
+      <h3>Barcelona</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Hotel Name</th>
+            <th>Location</th>
+            <th>Rating</th>
+            <th>Price Range</th>
+            <th>Booking Info</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hotel Arts Barcelona</td>
+            <td>Port Olímpic, Barcelona</td>
+            <td>4.5/5</td>
+            <td>€200 - €350/night</td>
+            <td><a href="#" target="_blank">Book Now</a></td>
+          </tr>
+          <tr>
+            <td>Majestic Hotel &amp; Spa</td>
+            <td>Diagonal, Barcelona</td>
+            <td>4.7/5</td>
+            <td>€250 - €400/night</td>
+            <td><a href="#" target="_blank">Book Now</a></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <!-- Madrid Accommodations -->
+      <h3>Madrid</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Hotel Name</th>
+            <th>Location</th>
+            <th>Rating</th>
+            <th>Price Range</th>
+            <th>Booking Info</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>The Westin Palace Madrid</td>
+            <td>Centro, Madrid</td>
+            <td>4.6/5</td>
+            <td>€180 - €300/night</td>
+            <td><a href="#" target="_blank">Book Now</a></td>
+          </tr>
+          <tr>
+            <td>Only YOU Hotel Atocha</td>
+            <td>Atocha, Madrid</td>
+            <td>4.4/5</td>
+            <td>€150 - €250/night</td>
+            <td><a href="#" target="_blank">Book Now</a></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <!-- Lagos Accommodations -->
+      <h3>Lagos, Portugal</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Hotel Name</th>
+            <th>Location</th>
+            <th>Rating</th>
+            <th>Price Range</th>
+            <th>Booking Info</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Belmar Spa &amp; Beach Resort</td>
+            <td>Lagos</td>
+            <td>4.3/5</td>
+            <td>€120 - €200/night</td>
+            <td><a href="#" target="_blank">Book Now</a></td>
+          </tr>
+          <tr>
+            <td>Tivoli Lagos</td>
+            <td>Central Lagos</td>
+            <td>4.2/5</td>
+            <td>€100 - €180/night</td>
+            <td><a href="#" target="_blank">Book Now</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <!-- Transfer Details Section -->
+    <section id="transfer-details">
+      <h2>Transfer Details</h2>
+      <p>
+        <strong>Private Transfer (Faro to Lagos):</strong><br>
+        Booking Reference: PT152709010<br>
+        Date: 5 Jul 2025<br>
+        Pick-up: Faro Airport<br>
+        Drop-off: Belmar Spa &amp; Beach Resort, Lagos<br>
+        Vehicle: XL Minivan (8 seats, 8 bags)<br>
+        Cost: €114.39 (incl. taxes &amp; tolls)<br>
+        Cancellation: Up to 24 hours before transfer.
+      </p>
+    </section>
+    
     <!-- Destination Details Section -->
-    <section>
+    <section id="destination-details">
       <h2>Destination Details</h2>
-      <!-- Barcelona -->
       <article>
-        <h3>Barcelona (30 June 2025, 3-4 nights)</h3>
+        <h3>Barcelona</h3>
         <p>
-          Barcelona is known for its stunning architecture, lively markets, and Mediterranean vibe.
+          Barcelona, the vibrant capital of Catalonia, is known for its stunning architecture, lively markets, and Mediterranean vibe.
         </p>
         <ul>
           <li><strong>Must-See Sights:</strong> Sagrada Família, Park Güell, Las Ramblas</li>
           <li><strong>Popular Neighborhoods:</strong> Gothic Quarter, Eixample, Barceloneta</li>
-          <li><strong>Cuisine Highlights:</strong> Tapas, paella, fresh seafood</li>
+          <li><strong>Cuisine:</strong> Tapas, paella, fresh seafood</li>
         </ul>
-        <p><em>Arrive 30 June 2025 (Flight EK 185). Departure TBD.</em></p>
+        <p><em>Arrive 30 Jun 2025 (Flight EK 185). Departure TBD.</em></p>
       </article>
       
-      <!-- Madrid -->
       <article>
-        <h3>Madrid (TBD)</h3>
+        <h3>Madrid</h3>
         <p>
-          Options include exploring Madrid or taking a train from Barcelona. More details coming soon.
+          Madrid offers rich culture, art, and historical sites. Explore the city or take a train from Barcelona for a different experience.
         </p>
       </article>
       
-      <!-- Lagos -->
       <article>
-        <h3>Lagos, Portugal (5 Jul 2025 - 12 Jul 2025, 7 nights)</h3>
-        <h4>Flight from Madrid to Faro</h4>
+        <h3>Lagos, Portugal</h3>
         <p>
-          <strong>Airline:</strong> Ryanair<br>
-          <strong>Flight Number:</strong> FR1472<br>
-          <strong>Date:</strong> 5 Jul 2025<br>
-          <strong>Route:</strong> Madrid (MAD) → Faro (FAO)<br>
-          <strong>Departure:</strong> 11:05 AM (CET)<br>
-          <strong>Arrival:</strong> 11:30 AM (WEST)<br>
-          <strong>Luggage:</strong> 5 x 20kg (additional allowances apply)
-        </p>
-        <h4>Private Transfer from Faro to Lagos</h4>
-        <p>
-          <strong>Booking Reference:</strong> PT152709010<br>
-          <strong>Date:</strong> 5 Jul 2025<br>
-          <strong>Pick-up:</strong> Faro Airport<br>
-          <strong>Drop-off:</strong> Belmar Spa &amp; Beach Resort, Lagos<br>
-          <strong>Vehicle:</strong> XL Minivan (8 seats)<br>
-          <strong>Cost:</strong> €114.39 (incl. taxes &amp; tolls)<br>
-          <strong>Cancellation:</strong> Up to 24 hours before transfer
+          Enjoy the beautiful beaches, local seafood, and a relaxed atmosphere in Lagos.
         </p>
       </article>
-    </section>
-    
-    <!-- Accommodation Placeholder Section -->
-    <section>
-      <h2>Accommodation</h2>
-      <p>Details for hotels and other accommodations will be added here soon.</p>
     </section>
   </main>
   
