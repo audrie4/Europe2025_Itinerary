@@ -12,7 +12,7 @@
       color: #333;
       line-height: 1.6;
     }
-    header, nav, main, footer {
+    header, main, footer {
       max-width: 1200px;
       margin: auto;
       padding: 20px;
@@ -26,26 +26,29 @@
       margin: 0;
       padding-bottom: 10px;
     }
-    /* Symbox (Icon Box) Styles */
-    .symbox-container {
+    /* Icon Navigation Styles */
+    .icon-nav {
       display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
       margin: 20px 0;
     }
-    .symbox {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      width: 30%;
-      min-width: 250px;
-      text-align: center;
-      padding: 20px;
-      margin: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    .icon-link {
+      text-decoration: none;
+      color: #333;
+      display: inline-block;
     }
-    .symbox h3 {
-      margin: 10px 0;
+    .icon {
+      text-align: center;
+      width: 80px;
+    }
+    .icon-symbol {
+      font-size: 30px;
+      display: block;
+    }
+    .icon-label {
+      font-size: 0.9em;
+      margin-top: 5px;
     }
     /* Section Styles */
     section {
@@ -78,12 +81,9 @@
     }
     /* Responsive adjustments */
     @media (max-width: 768px) {
-      .symbox-container {
+      .icon-nav {
         flex-direction: column;
         align-items: center;
-      }
-      .symbox {
-        width: 80%;
       }
     }
     footer {
@@ -96,26 +96,35 @@
 <body>
   <header>
     <h1>Europe 2025: Travel Guide</h1>
-    <p>This document is a draft itinerary for our Purcell Family trip. Stay tuned for updates on flights, accommodations, transfers, and more.</p>
+    <p>This document is a draft itinerary for our Purcell Family trip. Stay tuned for updates on flights, accommodations, transfers, restaurants, and more.</p>
   </header>
   
-  <!-- Navigation Symboxes -->
-  <nav class="symbox-container">
-    <div class="symbox">
-      <div style="font-size: 40px;">🏨</div>
-      <h3>Accommodation</h3>
-      <p>Hotel and stay details for each destination.</p>
-    </div>
-    <div class="symbox">
-      <div style="font-size: 40px;">✈️</div>
-      <h3>Flight</h3>
-      <p>Flight schedules and booking info.</p>
-    </div>
-    <div class="symbox">
-      <div style="font-size: 40px;">🚌</div>
-      <h3>Transfer</h3>
-      <p>Private transfers and transport details.</p>
-    </div>
+  <!-- Icon Navigation -->
+  <nav class="icon-nav">
+    <a href="accommodation.html" class="icon-link">
+      <div class="icon">
+        <span class="icon-symbol">🏨</span>
+        <span class="icon-label">Accommodation</span>
+      </div>
+    </a>
+    <a href="flight.html" class="icon-link">
+      <div class="icon">
+        <span class="icon-symbol">✈️</span>
+        <span class="icon-label">Flight</span>
+      </div>
+    </a>
+    <a href="transfer.html" class="icon-link">
+      <div class="icon">
+        <span class="icon-symbol">🚌</span>
+        <span class="icon-label">Transfer</span>
+      </div>
+    </a>
+    <a href="restaurant.html" class="icon-link">
+      <div class="icon">
+        <span class="icon-symbol">🍽️</span>
+        <span class="icon-label">Restaurant</span>
+      </div>
+    </a>
   </nav>
   
   <main>
@@ -230,93 +239,59 @@
     <!-- Accommodation Details Section -->
     <section id="accommodations">
       <h2>Accommodation Details</h2>
-      
-      <!-- Barcelona Accommodations -->
-      <h3>Barcelona</h3>
       <table>
         <thead>
           <tr>
+            <th>🏨</th>
+            <th>Booking Dates</th>
             <th>Hotel Name</th>
-            <th>Location</th>
-            <th>Rating</th>
-            <th>Price Range</th>
-            <th>Booking Info</th>
+            <th>Hotel Town</th>
+            <th>Room Type</th>
+            <th>Capacity</th>
+            <th>Breakfast Included</th>
+            <th>Website</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td>🏨</td>
+            <td>30 Jun 2025 - 3 Jul 2025</td>
             <td>Hotel Arts Barcelona</td>
-            <td>Port Olímpic, Barcelona</td>
-            <td>4.5/5</td>
-            <td>€200 - €350/night</td>
-            <td><a href="#" target="_blank">Book Now</a></td>
+            <td>Barcelona</td>
+            <td>Deluxe Room</td>
+            <td>2</td>
+            <td>Yes</td>
+            <td><a href="https://www.hotelartsbarcelona.com" target="_blank">Visit</a></td>
           </tr>
           <tr>
+            <td>🏨</td>
+            <td>3 Jul 2025 - 6 Jul 2025</td>
             <td>Majestic Hotel &amp; Spa</td>
-            <td>Diagonal, Barcelona</td>
-            <td>4.7/5</td>
-            <td>€250 - €400/night</td>
-            <td><a href="#" target="_blank">Book Now</a></td>
+            <td>Barcelona</td>
+            <td>Executive Suite</td>
+            <td>3</td>
+            <td>No</td>
+            <td><a href="https://www.hotelmajestic.es" target="_blank">Visit</a></td>
           </tr>
-        </tbody>
-      </table>
-      
-      <!-- Madrid Accommodations -->
-      <h3>Madrid</h3>
-      <table>
-        <thead>
           <tr>
-            <th>Hotel Name</th>
-            <th>Location</th>
-            <th>Rating</th>
-            <th>Price Range</th>
-            <th>Booking Info</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
+            <td>🏨</td>
+            <td>6 Jul 2025 - 9 Jul 2025</td>
             <td>The Westin Palace Madrid</td>
-            <td>Centro, Madrid</td>
-            <td>4.6/5</td>
-            <td>€180 - €300/night</td>
-            <td><a href="#" target="_blank">Book Now</a></td>
+            <td>Madrid</td>
+            <td>Standard Room</td>
+            <td>2</td>
+            <td>Yes</td>
+            <td><a href="https://www.marriott.com" target="_blank">Visit</a></td>
           </tr>
           <tr>
-            <td>Only YOU Hotel Atocha</td>
-            <td>Atocha, Madrid</td>
-            <td>4.4/5</td>
-            <td>€150 - €250/night</td>
-            <td><a href="#" target="_blank">Book Now</a></td>
-          </tr>
-        </tbody>
-      </table>
-      
-      <!-- Lagos Accommodations -->
-      <h3>Lagos, Portugal</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Hotel Name</th>
-            <th>Location</th>
-            <th>Rating</th>
-            <th>Price Range</th>
-            <th>Booking Info</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
+            <td>🏨</td>
+            <td>9 Jul 2025 - 12 Jul 2025</td>
             <td>Belmar Spa &amp; Beach Resort</td>
             <td>Lagos</td>
-            <td>4.3/5</td>
-            <td>€120 - €200/night</td>
-            <td><a href="#" target="_blank">Book Now</a></td>
-          </tr>
-          <tr>
-            <td>Tivoli Lagos</td>
-            <td>Central Lagos</td>
-            <td>4.2/5</td>
-            <td>€100 - €180/night</td>
-            <td><a href="#" target="_blank">Book Now</a></td>
+            <td>Family Suite</td>
+            <td>4</td>
+            <td>Yes</td>
+            <td><a href="https://www.belmarresort.com" target="_blank">Visit</a></td>
           </tr>
         </tbody>
       </table>
