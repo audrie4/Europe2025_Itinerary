@@ -1,80 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>Accommodation Details</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #fafafa;
+      color: #333;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    caption {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-<!-- Accommodation Details Section -->
-    <section id="accommodations">
-      <h2>Accommodation Details</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>🏨</th>
-            <th>Booking Dates</th>
-            <th>Hotel Name</th>
-            <th>Hotel Address</th>
-            <th>Hotel Town</th>
-            <th>Room Type</th>
-            <th>Capacity</th>
-            <th>Breakfast Included</th>
-            <th>Website</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>🏨</td>
-            <td>30 Jun 2025 - 3 Jul 2025</td>
-            <td>Stay Together Barcelona Apartments</td>
-            <td>Ronda Sant Pau 1, Eixample, 08015</td>
-            <td>Barcelona</td>
-            <td>3 Bedroom Apartment</td>
-            <td>6</td>
-            <td>No</td>
-            <td><a href="https://www.booking.com/hotel/es/stay-together-barcelona-apartments.html" 
-      target="_blank"></td>
-          </tr>
-          <tr>
-            <td>🏨</td>
-            <td>3 Jul 2025 - 6 Jul 2025</td>
-            <td>Madrid TBC</td>
-            <td>TBC5</td>
-            <td>Madrid</td>
-            <td>ETBC/td>
-            <td>3</td>
-            <td>No</td>
-            <td><a href="https://www.hotelmajestic.es" target="_blank">Visit</a></td>
-          </tr>
-          <tr>
-            <td>🏨</td>
-            <td>9 Jul 2025 - 12 Jul 2025</td>
-            <td>Belmar Spa &amp; Beach Resort</td>
-            <td>Praia Do Porto De Mós, 8600-513</td>
-            <td>Lagos</td>
-            <td>Family Suite</td>
-            <td>4</td>
-            <td>No</td>
-            <td><a href="https://www.belmarresort.com" target="_blank">Visit</a></td>
-          </tr>
-            <tr>
-            <td>🏨</td>
-            <td>12 Jul 2025 - 19 Jul 2025</td>
-            <td>Emily (VDL 3750)</td>
-              <td>VDL680C</td>
-            <td>Vale do Lobo/td>
-            <td>Villa/td>
-            <td>6</td>
-            <td>No</td>
-            <td><a href="https://www.sun-hat-villas.com" target="_blank">Visit</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    
+  <h1>Accommodation Details</h1>
+  <table>
+    <caption>Accommodation Details</caption>
+    <thead>
+      <tr>
+        <th>🏨</th>
+        <th>Booking Dates</th>
+        <th>Hotel Name</th>
+        <th>Hotel Address</th>
+        <th>Hotel Town</th>
+        <th>Room Type</th>
+        <th>Capacity</th>
+        <th>Breakfast Included</th>
+        <th>Website</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>🏨</td>
+        <td>30 Jun 2025 - 3 Jul 2025</td>
+        <td>Stay Together Barcelona Apartments</td>
+        <td>Ronda Sant Pau 1, Eixample, 08015</td>
+        <td>Barcelona</td>
+        <td>3 Bedroom Apartment</td>
+        <td>6</td>
+        <td>No</td>
+        <td><!-- Optional link or text --></td>
+      </tr>
+      <tr>
+        <td>🏨</td>
+        <td>3 Jul 2025 - 6 Jul 2025</td>
+        <td>Madrid TBC</td>
+        <td>TBC5</td>
+        <td>Madrid</td>
+        <td>TBC</td>
+        <td>3</td>
+        <td>No</td>
+        <td><a href="#">Visit</a></td>
+      </tr>
+      <tr>
+        <td>🏨</td>
+        <td>9 Jul 2025 - 12 Jul 2025</td>
+        <td>Belmar Spa &amp; Beach Resort</td>
+        <td>Praia Do Porto De Mós, 8600-513</td>
+        <td>Lagos</td>
+        <td>Family Suite</td>
+        <td>4</td>
+        <td>No</td>
+        <td><a href="https://www.belmarresort.com" target="_blank">Visit</a></td>
+      </tr>
+      <tr>
+        <td>🏨</td>
+        <td>12 Jul 2025 - 19 Jul 2025</td>
+        <td>Emily (VDL 3750)</td>
+        <td>VDL680C</td>
+        <td>Vale do Lobo</td>
+        <td>Villa</td>
+        <td>6</td>
+        <td>No</td>
+        <td><a href="#">Visit</a></td>
+      </tr>
+    </tbody>
+  </table>
+  
   <a href="index.html">Back to Home</a>
 </body>
 </html>
