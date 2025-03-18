@@ -4,17 +4,80 @@
   <meta charset="utf-8">
   <title>Flight Details</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
+    /* Global Page Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      margin-bottom: 0.5em;
+    }
+    
+    /* Table Styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      background: #fff;
+      border: 1px solid #ddd;
+    }
+    caption {
+      text-align: left;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+    thead {
+      background: #f0f0f0;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      vertical-align: top;
+      text-align: left;
+    }
+    th {
+      font-weight: 600;
+    }
+    /* Alternate row coloring */
+    tbody tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    
+    /* Small styling for times and check-in info */
+    .flight-time {
+      white-space: nowrap;
+      font-weight: 600;
+    }
+    .checkin-info {
+      font-size: 0.9em;
+      color: #666;
+    }
+    
+    /* Link Styles */
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #007bff;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <h1>Flight Details</h1>
-  <p>This is where your flight information will go.</p>
+  <p>Below are the outbound and return flight itineraries, including seat assignments and approximate flight times.</p>
   
   <main>
     <!-- Flight Itinerary Section -->
     <section id="flight-itinerary">
       <h2>Flight Itinerary</h2>
+      <!-- Outbound Flight Table -->
       <table>
         <caption>Sydney to Barcelona ✈️</caption>
         <thead>
@@ -22,13 +85,13 @@
             <th>Leg</th>
             <th>Flight &amp; Class</th>
             <th>Origin → Destination</th>
-            <th>Departure &amp; Arrival (Local Time)</th>
+            <th>Departure &amp; Arrival</th>
             <th>P1: Audrie<br>(EK428493133)</th>
             <th>P2: Katie<br>(EK712249086)</th>
             <th>P3: Robyn<br>(EK712249274)</th>
             <th>P4: James<br>(EK711637710)</th>
             <th>P5: Patrick<br>(EK428301661)</th>
-            <th>Approx. Flight Time</th>
+            <th>Approx.<br>Time</th>
           </tr>
         </thead>
         <tbody>
@@ -37,9 +100,10 @@
             <td>EK 413 (Economy Flex)</td>
             <td>Sydney → Dubai</td>
             <td>
-              29 Jun 2025 21:10 (Check-in 17:10)<br>
+              <span class="flight-time">29 Jun 2025 21:10</span><br>
+              <span class="checkin-info">Check-in 17:10</span><br>
               →<br>
-              30 Jun 2025 05:40
+              <span class="flight-time">30 Jun 2025 05:40</span>
             </td>
             <td>57H (Aisle)</td>
             <td>57J (Middle)</td>
@@ -53,9 +117,10 @@
             <td>EK 185 (Economy Flex)</td>
             <td>Dubai → Barcelona</td>
             <td>
-              30 Jun 2025 08:15 (Check-in 05:15)<br>
+              <span class="flight-time">30 Jun 2025 08:15</span><br>
+              <span class="checkin-info">Check-in 05:15</span><br>
               →<br>
-              30 Jun 2025 13:25
+              <span class="flight-time">30 Jun 2025 13:25</span>
             </td>
             <td>48G (Aisle)</td>
             <td>48E (Middle)</td>
@@ -67,6 +132,7 @@
         </tbody>
       </table>
       
+      <!-- Return Flight Table -->
       <table>
         <caption>Return Flight Itinerary</caption>
         <thead>
@@ -74,13 +140,13 @@
             <th>Leg</th>
             <th>Flight &amp; Class</th>
             <th>Origin → Destination</th>
-            <th>Departure &amp; Arrival (Local Time)</th>
+            <th>Departure &amp; Arrival</th>
             <th>P1: Audrie<br>(EK428493133)</th>
             <th>P2: Katie<br>(EK712249086)</th>
             <th>P3: Robyn<br>(EK712249274)</th>
             <th>P4: James<br>(EK711637710)</th>
             <th>P5: Patrick<br>(EK428301661)</th>
-            <th>Approx. Flight Time</th>
+            <th>Approx.<br>Time</th>
           </tr>
         </thead>
         <tbody>
@@ -89,9 +155,10 @@
             <td>EK 194 (Economy Flex Plus)</td>
             <td>Lisbon → Dubai</td>
             <td>
-              19 Jul 2025 21:15 (Check-in 17:45)<br>
+              <span class="flight-time">19 Jul 2025 21:15</span><br>
+              <span class="checkin-info">Check-in 17:45</span><br>
               →<br>
-              20 Jul 2025 08:05
+              <span class="flight-time">20 Jul 2025 08:05</span>
             </td>
             <td>19G (Aisle)</td>
             <td>19F (Middle)</td>
@@ -105,9 +172,10 @@
             <td>EK 412 (Economy Flex Plus)</td>
             <td>Dubai → Sydney</td>
             <td>
-              20 Jul 2025 10:20 (Check-in 07:20)<br>
+              <span class="flight-time">20 Jul 2025 10:20</span><br>
+              <span class="checkin-info">Check-in 07:20</span><br>
               →<br>
-              21 Jul 2025 06:05
+              <span class="flight-time">21 Jul 2025 06:05</span>
             </td>
             <td>57H (Aisle)</td>
             <td>57J (Middle)</td>
