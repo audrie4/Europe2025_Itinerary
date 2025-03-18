@@ -1,30 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Purcell Family Europe 2025 Trip Itinerary</title>
   <style>
+    /* Global Styles */
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
     }
-    h1, h2, h3 {
-      margin-top: 1.2em;
-      margin-bottom: 0.6em;
+    header, nav, main, footer {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
     }
-    .destination-section, .itinerary-section {
-      margin-bottom: 2em;
+    header {
+      background: #fff;
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 20px;
     }
+    header h1 {
+      margin: 0;
+      padding-bottom: 10px;
+    }
+    /* Symbox (Icon Box) Styles */
+    .symbox-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .symbox {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 30%;
+      min-width: 250px;
+      text-align: center;
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .symbox h3 {
+      margin: 10px 0;
+    }
+    /* Section Styles */
+    section {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    /* Table Styles */
     table {
       border-collapse: collapse;
       width: 100%;
-      margin-top: 1em;
+      margin-top: 10px;
     }
     th, td {
       border: 1px solid #ccc;
       padding: 8px;
       text-align: left;
-      vertical-align: top;
     }
     th {
       background-color: #eee;
@@ -35,228 +76,217 @@
       margin-bottom: 8px;
       text-align: left;
     }
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .symbox-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .symbox {
+        width: 80%;
+      }
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+    }
   </style>
 </head>
 <body>
-
-  <!-- MAIN TITLE -->
-  <h1>Europe 2025: Travel Guide</h1>
-  <p>This document is a rough draft of our plans for Barcelona, Madrid, Lagos, Vale do Lobo. 
- I will keep updating it with additional accommodations, restaurants, and sightseeing ideas.</p>
-<table>
-      <caption>Sydney to Barcelona <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Emoji_u2708.svg" width="20"></caption><table>
-      <caption>Flight Schedule</caption>
-      <thead>
-        <tr>
-          <th>Leg</th>
-          <th>Flight &amp; Class</th>
-          <th>Origin &rarr; Destination</th>
-          <th>Departure &amp; Arrival (Local Time)</th>
-          <th>P1: Audrie<br>(EK428493133)</th>
-          <th>P2: Katie<br>(EK712249086)</th>
-          <th>P3: Robyn<br>(EK712249274)</th>
-          <th>P4: James<br>(EK711637710)</th>
-          <th>P5: Patrick<br>(EK428301661)</th>
-          <th>Approx. Flight Time</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1/4</td>
-          <td>EK 413 (Economy Flex)</td>
-          <td>Sydney &rarr; Dubai</td>
-          <td>
-            29 Jun 2025 21:10 (Check-in 17:10)<br>
-            &rarr;<br>
-            30 Jun 2025 05:40
-          </td>
-          <td>57H (Aisle)</td>
-          <td>57J (Middle)</td>
-          <td>57K (Window)</td>
-          <td>56G (Aisle)</td>
-          <td>57G (Aisle)</td>
-          <td>~14h 30m</td>
-        </tr>
-        <tr>
-          <td>2/4</td>
-          <td>EK 185 (Economy Flex)</td>
-          <td>Dubai &rarr; Barcelona</td>
-          <td>
-            30 Jun 2025 08:15 (Check-in 05:15)<br>
-            &rarr;<br>
-            30 Jun 2025 13:25
-          </td>
-          <td>48G (Aisle)</td>
-          <td>48E (Middle)</td>
-          <td>48F (Middle)</td>
-          <td>48D (Aisle)</td>
-          <td>48H (Aisle)</td>
-          <td>~5h 10m</td>
-        </tr></caption>
-      <thead>
-        <tr>
-          <th>Leg</th>
-          <th>Flight &amp; Class</th>
-          <th>Origin &rarr; Destination</th>
-          <th>Departure &amp; Arrival (Local Time)</th>
-          <th>P1: Audrie<br>(EK428493133)</th>
-          <th>P2: Katie<br>(EK712249086)</th>
-          <th>P3: Robyn<br>(EK712249274)</th>
-          <th>P4: James<br>(EK711637710)</th>
-          <th>P5: Patrick<br>(EK428301661)</th>
-          <th>Approx. Flight Time</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1/4</td>
-          <td>EK 413 (Economy Flex)</td>
-          <td>Sydney &rarr; Dubai</td>
-          <td>
-            29 Jun 2025 21:10 (Check-in 17:10)<br>
-            &rarr;<br>
-            30 Jun 2025 05:40
-          </td>
-          <td>57H (Aisle)</td>
-          <td>57J (Middle)</td>
-          <td>57K (Window)</td>
-          <td>56G (Aisle)</td>
-          <td>57G (Aisle)</td>
-          <td>~14h 30m</td>
-        </tr>
-        <tr>
-          <td>2/4</td>
-          <td>EK 185 (Economy Flex)</td>
-          <td>Dubai &rarr; Barcelona</td>
-          <td>
-            30 Jun 2025 08:15 (Check-in 05:15)<br>
-            &rarr;<br>
-            30 Jun 2025 13:25
-          </td>
-          <td>48G (Aisle)</td>
-          <td>48E (Middle)</td>
-          <td>48F (Middle)</td>
-          <td>48D (Aisle)</td>
-          <td>48H (Aisle)</td>
-          <td>~5h 10m</td>
-        </tr>
-      </tbody>
-</table>
-
-  <!-- DESTINATION 1: BARCELONA -->
-  <div class="destination-section">
-    <h2>Destination 1: Barcelona (30 June 2025, 3-4 nights)</h2>
-    <p>
-      Barcelona, the vibrant capital of Catalonia, is known for its 
-      stunning architecture (including Gaudí’s masterpieces), lively markets, 
-      and Mediterranean atmosphere. 
-    </p>
-    <ul>
-      <li><strong>Must-See Sights:</strong> Sagrada Família, Park Güell, Las Ramblas</li>
-      <li><strong>Popular Neighborhoods:</strong> Gothic Quarter, Eixample, Barceloneta</li>
-      <li><strong>Cuisine Highlights:</strong> Tapas, paella, fresh seafood</li>
-    </ul>
-    <p>Exact dates in Barcelona: <em>Arrive 30 June 2025 (Flight EK 185), depart to the next destination at a future date (TBD).</em></p>
-  </div>
-
-  <!-- DESTINATION 2: MADRID TBC -->
-  <div class="destination-section">
-    <h2>Destination 2: Madrid</h2>
-    <p>
-      We have a gap in our schedule after visiting Barcelona. Madrid is our potential options:
-    </p>
-    <ul>
-      <li>Explore Madrid TBC.</li>
-      <li>Take a train to Madrid TBC.</li>
-    </ul>
-    <p>I will confirm this segment once I finalise our travel preferences.</p>
-  </div>
-
-  <!-- DESTINATION 3: PORTUGAL LAGOS -->
-  <div class="destination-section">
-    <h2>Destination 3: Lagos (5 JuLY 2025 to 12th July, 7 nights)</h2>
-<h3>Flight from Madrid to Faro</h3>
-<p>
-  <strong>Airline:</strong> Ryanair<br>
-  <strong>Flight Number:</strong> FR1472<br>
-  <strong>Date:</strong> 5 Jul 2025<br>
-  <strong>Route:</strong> Madrid (MAD) → Faro (FAO)<br>
-  <strong>Departure:</strong> 11:05 AM (CET)<br>
-  <strong>Arrival:</strong> 11:30 AM (WEST)<br>
-  <strong>Luggage Allowance:</strong> 5 x 20kg, 3 x 10kg additional, 5 x small bags (40cm x 20cm x 25cm)
-</p>
-
-<h3>Private Transfer from Faro to Lagos</h3>
-<p>
-  <strong>Booking Reference:</strong> PT152709010<br>
-  <strong>Date:</strong> 5 Jul 2025<br>
-  <strong>Pick-up Location:</strong> Faro Airport<br>
-  <strong>Drop-off:</strong> Belmar Spa & Beach Resort, Lagos<br>
-  <strong>Vehicle:</strong> XL Minivan (8 seats, 8 bags)<br>
-  <strong>Cost:</strong> €114.39 (incl. taxes & tolls)<br>
-    <strong>Cancellation:</strong> upto 24 hours before transfer, book through Ryanair
-</p>
-  </div>
-
-  <!-- FLIGHT ITINERARY -->
-  <div class="itinerary-section">
-    <h2>Master Itinerary (Booking Reference: LCP82S)</h2>
-    <p>Below is the flight schedule for all five travelers.</p>
-
-    <table>
-      <caption>Flight Schedule</caption>
-      <thead>
-        <tr>
-          <th>Leg</th>
-          <th>Flight &amp; Class</th>
-          <th>Origin &rarr; Destination</th>
-          <th>Departure &amp; Arrival (Local Time)</th>
-          <th>P1: Audrie<br>(EK428493133)</th>
-          <th>P2: Katie<br>(EK712249086)</th>
-          <th>P3: Robyn<br>(EK712249274)</th>
-          <th>P4: James<br>(EK711637710)</th>
-          <th>P5: Patrick<br>(EK428301661)</th>
-          <th>Approx. Flight Time</th>
-        </tr>
-      </thead>
-      <tbody>  
-        <tr>
-          <td>3/4</td>
-          <td>EK 194 (Economy Flex Plus)</td>
-          <td>Lisbon &rarr; Dubai</td>
-          <td>
-            19 Jul 2025 21:15 (Check-in 17:45)<br>
-            &rarr;<br>
-            20 Jul 2025 08:05
-          </td>
-          <td>19G (Aisle)</td>
-          <td>19F (Middle)</td>
-          <td>19E (Middle)</td>
-          <td>19H (Aisle)</td>
-          <td>19D (Aisle)</td>
-          <td>~7–8h</td>
-        </tr>
-        <tr>
-          <td>4/4</td>
-          <td>EK 412 (Economy Flex Plus)</td>
-          <td>Dubai &rarr; Sydney</td>
-          <td>
-            20 Jul 2025 10:20 (Check-in 07:20)<br>
-            &rarr;<br>
-            21 Jul 2025 06:05
-          </td>
-          <td>57H (Aisle)</td>
-          <td>57J (Middle)</td>
-          <td>57K (Window)</td>
-          <td>57G (Aisle)</td>
-          <td>56G (Aisle)</td>
-          <td>~13–14h</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <p><em>I will continue to update this guide with more accommodations, restaurants, and sightseeing suggestions as the trip plans develop.</em></p>
-
+  <header>
+    <h1>Europe 2025: Travel Guide</h1>
+    <p>This document is a draft itinerary for our Purcell Family trip. Stay tuned for updates on accommodations, flights, transfers, and more.</p>
+  </header>
+  
+  <!-- Navigation Symboxes -->
+  <nav class="symbox-container">
+    <div class="symbox">
+      <div style="font-size: 40px;">🏨</div>
+      <h3>Accommodation</h3>
+      <p>Hotel and stay details coming soon.</p>
+    </div>
+    <div class="symbox">
+      <div style="font-size: 40px;">✈️</div>
+      <h3>Flight</h3>
+      <p>Complete flight schedules and booking info.</p>
+    </div>
+    <div class="symbox">
+      <div style="font-size: 40px;">🚌</div>
+      <h3>Transfer</h3>
+      <p>Private transfers and transport options.</p>
+    </div>
+  </nav>
+  
+  <main>
+    <!-- Flight Itinerary Section -->
+    <section>
+      <h2>Flight Itinerary</h2>
+      <table>
+        <caption>Sydney to Barcelona ✈️</caption>
+        <thead>
+          <tr>
+            <th>Leg</th>
+            <th>Flight &amp; Class</th>
+            <th>Origin → Destination</th>
+            <th>Departure &amp; Arrival (Local Time)</th>
+            <th>P1: Audrie<br>(EK428493133)</th>
+            <th>P2: Katie<br>(EK712249086)</th>
+            <th>P3: Robyn<br>(EK712249274)</th>
+            <th>P4: James<br>(EK711637710)</th>
+            <th>P5: Patrick<br>(EK428301661)</th>
+            <th>Approx. Flight Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1/4</td>
+            <td>EK 413 (Economy Flex)</td>
+            <td>Sydney → Dubai</td>
+            <td>
+              29 Jun 2025 21:10 (Check-in 17:10)<br>
+              →<br>
+              30 Jun 2025 05:40
+            </td>
+            <td>57H (Aisle)</td>
+            <td>57J (Middle)</td>
+            <td>57K (Window)</td>
+            <td>56G (Aisle)</td>
+            <td>57G (Aisle)</td>
+            <td>~14h 30m</td>
+          </tr>
+          <tr>
+            <td>2/4</td>
+            <td>EK 185 (Economy Flex)</td>
+            <td>Dubai → Barcelona</td>
+            <td>
+              30 Jun 2025 08:15 (Check-in 05:15)<br>
+              →<br>
+              30 Jun 2025 13:25
+            </td>
+            <td>48G (Aisle)</td>
+            <td>48E (Middle)</td>
+            <td>48F (Middle)</td>
+            <td>48D (Aisle)</td>
+            <td>48H (Aisle)</td>
+            <td>~5h 10m</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <table>
+        <caption>Return Flight Itinerary</caption>
+        <thead>
+          <tr>
+            <th>Leg</th>
+            <th>Flight &amp; Class</th>
+            <th>Origin → Destination</th>
+            <th>Departure &amp; Arrival (Local Time)</th>
+            <th>P1: Audrie<br>(EK428493133)</th>
+            <th>P2: Katie<br>(EK712249086)</th>
+            <th>P3: Robyn<br>(EK712249274)</th>
+            <th>P4: James<br>(EK711637710)</th>
+            <th>P5: Patrick<br>(EK428301661)</th>
+            <th>Approx. Flight Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>3/4</td>
+            <td>EK 194 (Economy Flex Plus)</td>
+            <td>Lisbon → Dubai</td>
+            <td>
+              19 Jul 2025 21:15 (Check-in 17:45)<br>
+              →<br>
+              20 Jul 2025 08:05
+            </td>
+            <td>19G (Aisle)</td>
+            <td>19F (Middle)</td>
+            <td>19E (Middle)</td>
+            <td>19H (Aisle)</td>
+            <td>19D (Aisle)</td>
+            <td>~7–8h</td>
+          </tr>
+          <tr>
+            <td>4/4</td>
+            <td>EK 412 (Economy Flex Plus)</td>
+            <td>Dubai → Sydney</td>
+            <td>
+              20 Jul 2025 10:20 (Check-in 07:20)<br>
+              →<br>
+              21 Jul 2025 06:05
+            </td>
+            <td>57H (Aisle)</td>
+            <td>57J (Middle)</td>
+            <td>57K (Window)</td>
+            <td>57G (Aisle)</td>
+            <td>56G (Aisle)</td>
+            <td>~13–14h</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <!-- Destination Details Section -->
+    <section>
+      <h2>Destination Details</h2>
+      <!-- Barcelona -->
+      <article>
+        <h3>Barcelona (30 June 2025, 3-4 nights)</h3>
+        <p>
+          Barcelona is known for its stunning architecture, lively markets, and Mediterranean vibe.
+        </p>
+        <ul>
+          <li><strong>Must-See Sights:</strong> Sagrada Família, Park Güell, Las Ramblas</li>
+          <li><strong>Popular Neighborhoods:</strong> Gothic Quarter, Eixample, Barceloneta</li>
+          <li><strong>Cuisine Highlights:</strong> Tapas, paella, fresh seafood</li>
+        </ul>
+        <p><em>Arrive 30 June 2025 (Flight EK 185). Departure TBD.</em></p>
+      </article>
+      
+      <!-- Madrid -->
+      <article>
+        <h3>Madrid (TBD)</h3>
+        <p>
+          Options include exploring Madrid or taking a train from Barcelona. More details coming soon.
+        </p>
+      </article>
+      
+      <!-- Lagos -->
+      <article>
+        <h3>Lagos, Portugal (5 Jul 2025 - 12 Jul 2025, 7 nights)</h3>
+        <h4>Flight from Madrid to Faro</h4>
+        <p>
+          <strong>Airline:</strong> Ryanair<br>
+          <strong>Flight Number:</strong> FR1472<br>
+          <strong>Date:</strong> 5 Jul 2025<br>
+          <strong>Route:</strong> Madrid (MAD) → Faro (FAO)<br>
+          <strong>Departure:</strong> 11:05 AM (CET)<br>
+          <strong>Arrival:</strong> 11:30 AM (WEST)<br>
+          <strong>Luggage:</strong> 5 x 20kg (additional allowances apply)
+        </p>
+        <h4>Private Transfer from Faro to Lagos</h4>
+        <p>
+          <strong>Booking Reference:</strong> PT152709010<br>
+          <strong>Date:</strong> 5 Jul 2025<br>
+          <strong>Pick-up:</strong> Faro Airport<br>
+          <strong>Drop-off:</strong> Belmar Spa &amp; Beach Resort, Lagos<br>
+          <strong>Vehicle:</strong> XL Minivan (8 seats)<br>
+          <strong>Cost:</strong> €114.39 (incl. taxes &amp; tolls)<br>
+          <strong>Cancellation:</strong> Up to 24 hours before transfer
+        </p>
+      </article>
+    </section>
+    
+    <!-- Accommodation Placeholder Section -->
+    <section>
+      <h2>Accommodation</h2>
+      <p>Details for hotels and other accommodations will be added here soon.</p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Purcell Family Travel. All rights reserved.</p>
+  </footer>
 </body>
 </html>
