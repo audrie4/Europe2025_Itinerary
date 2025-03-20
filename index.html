@@ -27,24 +27,26 @@
       margin: 0;
       padding-bottom: 10px;
     }
-.itinerary-intro {
-    background: #f9f9f9; /* Light background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-}
-.itinerary-intro h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-.itinerary-intro p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 12px;
-}
+
+    /* Itinerary Introduction */
+    .itinerary-intro {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    .itinerary-intro h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    .itinerary-intro p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
 
     /* Icon Navigation Styles */
     .icon-nav {
@@ -70,16 +72,8 @@
       font-size: 0.9em;
       margin-top: 5px;
     }
-    /* Section Styles */
-    section {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    /* Itinerary Summary Styles */
+
+    /* Itinerary Container */
     .itinerary-container {
       background: #eaf4fc;
       max-width: 600px;
@@ -88,18 +82,8 @@
       border-radius: 8px;
       box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
     }
-    h1, h2 {
-      text-align: center;
-      color: #333;
-    }
-    h3 {
-      font-size: 1.1em;
-      margin-bottom: 4px;
-    }
-    P {
-      margin: 2px 0;
-      line-height: 1.3;
-    }
+
+    /* Section Styles */
     .section {
       padding: 5px 0;
       border-bottom: 1px solid #ddd;
@@ -109,12 +93,25 @@
       border-bottom: none;
       margin-bottom: 0;
     }
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+    h3 {
+      font-size: 1.1em;
+      margin-bottom: 4px;
+    }
+    p {
+      margin: 2px 0;
+      line-height: 1.3;
+    }
     .date {
       font-weight: bold;
       color: #0056b3;
       margin-bottom: 2px;
     }
-    /* Responsive adjustments */
+
+    /* Responsive Adjustments */
     @media (max-width: 768px) {
       .icon-nav {
         flex-direction: column;
@@ -131,25 +128,25 @@
 <body>
   <header>
     <h1>Europe 2025: Travel Guide</h1>
-</header>
+  </header>
 
-<section class="itinerary-intro">
+  <section class="itinerary-intro">
     <h2>🌍 Purcell Family’s 2025 European Adventure – Buckle Up! ✈️</h2>
     <p>
-        Welcome to the Purcell Family Europe 2025 Travel Guide, where luxury is non-existent, legroom is a myth, 
-        and James will undoubtedly annoy his mum before we even board (a challenge he takes very seriously). 
-        We’ll be squished down the back of the plane, surviving the jet lag, and embarking on an adventure filled with 
-        culture, food, and the occasional travel mishap.
+      Welcome to the Purcell Family Europe 2025 Travel Guide, where luxury is non-existent, legroom is a myth, 
+      and James will undoubtedly annoy his mum before we even board (a challenge he takes very seriously). 
+      We’ll be squished down the back of the plane, surviving the jet lag, and embarking on an adventure filled with 
+      culture, food, and the occasional travel mishap.
     </p>
     <p>
-        From Barcelona’s bustling streets and Madrid’s royal charm to Portugal’s stunning beaches in Lagos and Vale do Lobo, 
-        we’ll be soaking up culture, sunshine, and way too much food. In Portugal, we’ll also be meeting friends along the way, 
-        adding to the chaos and fun. For the final week, we’ll be welcoming Jess back to the family—excitement levels will be high!
+      From Barcelona’s bustling streets and Madrid’s royal charm to Portugal’s stunning beaches in Lagos and Vale do Lobo, 
+      we’ll be soaking up culture, sunshine, and way too much food. In Portugal, we’ll also be meeting friends along the way, 
+      adding to the chaos and fun. For the final week, we’ll be welcoming Jess back to the family—excitement levels will be high!
     </p>
     <p>
-        Stay tuned as we keep updating the document while we keep updating the trip. Dad has been a great help!
+      Stay tuned as we keep updating the document while we keep updating the trip. Dad has been a great help!
     </p>
-</section>
+  </section>
   
   <!-- Icon Navigation -->
   <nav class="icon-nav">
@@ -177,88 +174,32 @@
         <span class="icon-label">Restaurant</span>
       </div>
     </a>
-   <a href="things-to-do.html" class="icon-link">
-  <div class="icon">
-    <span class="icon-symbol">🎡</span>
-    <span class="icon-label">Things to Do</span>
-  </div>
-</a>
+    <a href="things-to-do.html" class="icon-link">
+      <div class="icon">
+        <span class="icon-symbol">🎡</span>
+        <span class="icon-label">Things to Do</span>
+      </div>
+    </a>
   </nav>
-  
+
   <main>
-    <!-- Travel Itinerary Summary -->
     <section class="itinerary-container">
-        <h1>Purcell Family 2025</h1>
-        <h2>Travel Itinerary Summary</h2>
-        <p class="date">June 29 - July 21, 2025</p>
+      <h1>Purcell Family 2025</h1>
+      <h2>Travel Itinerary Summary</h2>
+      <p class="date">June 29 - July 21, 2025</p>
 
-        <div class="section">
-            <h3>✈️ Departure from Sydney</h3>
-            <p class="date">June 29, 2025</p>
-            <p>Sydney → Dubai → Barcelona</p>
-            <p>Emirates flights with 30kg baggage allowance</p>
-        </div>
-
-        <div class="section">
-            <h3>🏨 Stay in Barcelona</h3>
-            <p class="date">June 30 - July 3, 2025</p>
-            <p>Stay Together Barcelona Apartments</p>
-        </div>
-
-        <div class="section">
-            <h3>🚆 Travel to Madrid</h3>
-            <p class="date">July 3, 2025</p>
-            <p>Transport TBC (Train/Flight)</p>
-        </div>
-
-        <div class="section">
-            <h3>🏨 Stay in Madrid</h3>
-            <p class="date">July 3 - July 5, 2025</p>
-            <p>Accommodation TBC</p>
-        </div>
-
-        <div class="section">
-            <h3>✈️ Madrid to Faro</h3>
-            <p class="date">July 5, 2025</p>
-            <p>Ryanair Flight FR1472 | 20kg checked bag per person</p>
-        </div>
-
-        <div class="section">
-            <h3>🚖 Transfer from Faro to Lagos</h3>
-            <p class="date">July 5, 2025</p>
-            <p>Ryanair Private Transfer</p>
-            <p>Pickup: Faro Airport → Drop-off: Belmar Spa & Beach Resort</p>
-        </div>
-
-        <div class="section">
-            <h3>🏨 Stay in Lagos</h3>
-            <p class="date">July 5 - July 12, 2025</p>
-            <p>Belmar Spa & Beach Resort</p>
-        </div>
-
-        <div class="section">
-            <h3>🚖 Transport to Vale do Lobo</h3>
-            <p class="date">July 12, 2025</p>
-            <p>Transport TBC</p>
-        </div>
-
-        <div class="section">
-            <h3>🏡 Stay in Vale do Lobo - Jess Arrives</h3>
-            <p class="date">July 12 - July 19, 2025</p>
-            <p>Villa Emily</p>
-        </div>
-
-        <div class="section">
-            <h3>✈️ Return to Sydney</h3>
-            <p class="date">July 19 - July 21, 2025</p>
-            <p>Lisbon → Dubai → Sydney</p>
-            <p>Baggage: 35kg checked luggage</p>
-        </div>
+      <div class="section"><h3>✈️ Departure from Sydney</h3><p class="date">June 29, 2025</p><p>Sydney → Dubai → Barcelona</p></div>
+      <div class="section"><h3>🏨 Stay in Barcelona</h3><p class="date">June 30 - July 3, 2025</p><p>Stay Together Barcelona Apartments</p></div>
+      <div class="section"><h3>🚆 Travel to Madrid</h3><p class="date">July 3, 2025</p><p>Transport TBC (Train/Flight)</p></div>
+      <div class="section"><h3>🏨 Stay in Madrid</h3><p class="date">July 3 - July 5, 2025</p><p>Accommodation TBC</p></div>
+      <div class="section"><h3>✈️ Madrid to Faro</h3><p class="date">July 5, 2025</p><p>Ryanair Flight FR1472 | 20kg checked bag per person</p></div>
+      <div class="section"><h3>🚖 Transfer from Faro to Lagos</h3><p class="date">July 5, 2025</p><p>Pickup: Faro Airport → Drop-off: Belmar Spa & Beach Resort</p></div>
+      <div class="section"><h3>🏨 Stay in Lagos</h3><p class="date">July 5 - July 12, 2025</p><p>Belmar Spa & Beach Resort</p></div>
+      <div class="section"><h3>🚖 Transport to Vale do Lobo</h3><p class="date">July 12, 2025</p><p>Transport TBC</p></div>
+      <div class="section"><h3>🏡 Stay in Vale do Lobo</h3><p class="date">July 12 - July 19, 2025</p><p>Villa Emily</p></div>
     </section>
   </main>
-  
-  <footer>
-    <p>&copy; 2025 Purcell Family Travel. All rights reserved.</p>
-  </footer>
+
+  <footer><p>&copy; 2025 Purcell Family Travel. All rights reserved.</p></footer>
 </body>
 </html>
