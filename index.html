@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Purcell Family Europe 2025 Trip Itinerary</title>
   <style>
     /* Global Styles */
@@ -59,25 +60,27 @@
       margin-bottom: 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    /* Table Styles */
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin-top: 10px;
+    /* Itinerary Summary Styles */
+    .itinerary-container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
+    h1, h2 {
+      text-align: center;
+      color: #333;
     }
-    th {
-      background-color: #eee;
+    .section {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
     }
-    caption {
-      font-size: 1.2em;
+    .section:last-child {
+      border-bottom: none;
+    }
+    .date {
       font-weight: bold;
-      margin-bottom: 8px;
-      text-align: left;
+      color: #0056b3;
     }
     /* Responsive adjustments */
     @media (max-width: 768px) {
@@ -128,39 +131,74 @@
   </nav>
   
   <main>
-    <!--inlcude Travel Itinerary-->
-    
-    
-    
-    <!-- Destination Details Section -->
-    <section id="destination-details">
-      <h2>Destination Details</h2>
-      <article>
-        <h3>Barcelona</h3>
-        <p>
-          Barcelona, the vibrant capital of Catalonia, is known for its stunning architecture, lively markets, and Mediterranean vibe.
-        </p>
-        <ul>
-          <li><strong>Must-See Sights:</strong> Sagrada Família, Park Güell, Las Ramblas</li>
-          <li><strong>Popular Neighborhoods:</strong> Gothic Quarter, Eixample, Barceloneta</li>
-          <li><strong>Cuisine:</strong> Tapas, paella, fresh seafood</li>
-        </ul>
-        <p><em>Arrive 30 Jun 2025 (Flight EK 185). Departure TBD.</em></p>
-      </article>
-      
-      <article>
-        <h3>Madrid</h3>
-        <p>
-          Madrid offers rich culture, art, and historical sites. Explore the city or take a train from Barcelona for a different experience.
-        </p>
-      </article>
-      
-      <article>
-        <h3>Lagos, Portugal</h3>
-        <p>
-          Enjoy the beautiful beaches, local seafood, and a relaxed atmosphere in Lagos.
-        </p>
-      </article>
+    <!-- Travel Itinerary Summary -->
+    <section class="itinerary-container">
+        <h1>Purcell Family 2025</h1>
+        <h2>Travel Itinerary Summary</h2>
+        <p class="date">June 29 - July 21, 2025</p>
+
+        <div class="section">
+            <h3>✈️ Departure from Sydney</h3>
+            <p class="date">June 29, 2025</p>
+            <p>Sydney → Dubai → Barcelona</p>
+            <p>Emirates flights with 30kg baggage allowance</p>
+        </div>
+
+        <div class="section">
+            <h3>🏨 Stay in Barcelona</h3>
+            <p class="date">June 30 - July 3, 2025</p>
+            <p>Stay Together Barcelona Apartments</p>
+        </div>
+
+        <div class="section">
+            <h3>🚆 Travel to Madrid</h3>
+            <p class="date">July 3, 2025</p>
+            <p>Transport TBC (Train/Flight)</p>
+        </div>
+
+        <div class="section">
+            <h3>🏨 Stay in Madrid</h3>
+            <p class="date">July 3 - July 5, 2025</p>
+            <p>Accommodation TBC</p>
+        </div>
+
+        <div class="section">
+            <h3>✈️ Madrid to Faro</h3>
+            <p class="date">July 5, 2025</p>
+            <p>Ryanair Flight FR1472 | 20kg checked bag per person</p>
+        </div>
+
+        <div class="section">
+            <h3>🚖 Transfer from Faro to Lagos</h3>
+            <p class="date">July 5, 2025</p>
+            <p>Ryanair Private Transfer</p>
+            <p>Pickup: Faro Airport → Drop-off: Belmar Spa & Beach Resort</p>
+        </div>
+
+        <div class="section">
+            <h3>🏨 Stay in Lagos</h3>
+            <p class="date">July 5 - July 12, 2025</p>
+            <p>Belmar Spa & Beach Resort</p>
+        </div>
+
+        <div class="section">
+            <h3>🚖 Transport to Vale do Lobo</h3>
+            <p class="date">July 12, 2025</p>
+            <p>Transport TBC</p>
+        </div>
+
+        <div class="section">
+            <h3>🏡 Stay in Vale do Lobo - Jess Arrives</h3>
+            <p class="date">July 12 - July 19, 2025</p>
+            <p>Villa Emily</p>
+        </div>
+
+        <div class="section">
+            <h3>✈️ Return to Sydney</h3>
+            <p class="date">July 19 - July 21, 2025</p>
+            <p>Lisbon → Dubai → Sydney</p>
+            <p>Baggage: 35kg checked luggage</p>
+        </div>
     </section>
   </main>
   
