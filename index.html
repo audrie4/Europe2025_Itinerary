@@ -23,6 +23,7 @@
     }
     header h1 {
       margin: 0;
+      text-align: center;
     }
     /* Icon Navigation */
     nav.icon-nav {
@@ -46,39 +47,41 @@
       font-size: 0.9em;
       margin-top: 4px;
     }
-    /* Main Summary */
-    .summary {
+    /* Destination Blocks */
+    .destination {
       background: #eaf4fc;
       border-radius: 8px;
       padding: 15px;
       margin: 20px 0;
       box-shadow: 0 0 6px rgba(0,0,0,0.1);
     }
-    .day {
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
-    }
-    .day:last-child {
-      border-bottom: none;
-    }
-    .day h2 {
-      margin: 0 0 8px;
-      font-size: 1.2em;
+    .destination h2 {
+      margin: 0 0 10px;
+      font-size: 1.3em;
       color: #0056b3;
     }
-    .day ul {
-      margin: 6px 0 0 20px;
-      padding: 0;
+    .destination ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0 0 10px;
     }
-    .day ul li {
-      margin: 4px 0;
+    .destination ul li {
+      margin: 6px 0;
     }
-    .day ul li a {
+    .destination h3 {
+      margin: 12px 0 6px;
+      font-size: 1.1em;
       color: #333;
-      text-decoration: none;
     }
-    .day ul li a:hover {
-      text-decoration: underline;
+    .notes {
+      margin-top: 12px;
+      padding: 10px;
+      background: #fff;
+      border-left: 4px solid #0056b3;
+    }
+    .notes strong {
+      display: block;
+      margin-bottom: 6px;
     }
     footer {
       text-align: center;
@@ -101,34 +104,124 @@
     <a href="transfer.html" class="icon-link"><span class="icon-symbol">🚖</span><span class="icon-label">Transfer</span></a>
     <a href="restaurant.html" class="icon-link"><span class="icon-symbol">🍽️</span><span class="icon-label">Restaurant</span></a>
     <a href="things-to-do.html" class="icon-link"><span class="icon-symbol">🎡</span><span class="icon-label">Things to Do</span></a>
-    <a href="notes.html" class="icon-link"><span class="icon-symbol">📝</span><span class="icon-label">Notes</span></a>
   </nav>
 
   <main>
-    <section class="summary">
-      <!-- Daily Blocks -->
-      <div class="day">
-        <h2>June 29, 2025</h2>
-        <ul>
-          <li><a href="flight.html">✈️ Flight: Sydney → Dubai → Barcelona</a></li>
-          <li><a href="transfer.html">🚖 Transfer: Pickup at Gate XX</a></li>
-        </ul>
+    <!-- Barcelona -->
+    <section class="destination">
+      <h2>Barcelona (30 June – 3 July 2025)</h2>
+      <ul>
+        <li>Arrival: [Time]</li>
+        <li><a href="transfer.html">🚖 Transfer to Hotel</a></li>
+        <li><a href="accommodation.html">🏨 Hotel: [Hotel Name]</a></li>
+      </ul>
+      <h3>Day 1 (30 June)</h3>
+      <ul>
+        <li><a href="things-to-do.html">🎡 [Activity]</a></li>
+        <li><a href="restaurant.html">🍽️ [Restaurant Name]</a></li>
+      </ul>
+      <h3>Day 2 (1 July)</h3>
+      <ul>
+        <li><a href="things-to-do.html">🎡 [Activity]</a></li>
+        <li><a href="restaurant.html">🍽️ [Restaurant Name]</a></li>
+      </ul>
+      <h3>Day 3 (2 July)</h3>
+      <ul>
+        <li><a href="things-to-do.html">🎡 [Activity]</a></li>
+        <li><a href="restaurant.html">🍽️ [Restaurant Name]</a></li>
+      </ul>
+      <ul>
+        <li><a href="transfer.html">🚖 Transfer to Train Station/Airport</a></li>
+        <li>Departure: [Train/Flight], [Time], [Location]</li>
+      </ul>
+      <div class="notes">
+        <strong>Notes:</strong>
+        [Any brief notes for Barcelona]
       </div>
-      <div class="day">
-        <h2>June 30 – July 3, 2025</h2>
-        <ul>
-          <li><a href="accommodation.html">🏨 Accommodation: Barcelona Apartments</a></li>
-          <li><a href="things-to-do.html">🎡 Things to Do: Gothic Quarter walking tour</a></li>
-          <li><a href="restaurant.html">🍽️ Restaurant: TBD</a></li>
-        </ul>
+    </section>
+
+    <!-- Madrid -->
+    <section class="destination">
+      <h2>Madrid (3 July – 5 July 2025)</h2>
+      <ul>
+        <li>Arrival: [Time]</li>
+        <li><a href="transfer.html">🚖 Transfer to Hotel</a></li>
+        <li><a href="accommodation.html">🏨 Hotel: [Hotel Name]</a></li>
+      </ul>
+      <h3>Day 1 (3 July)</h3>
+      <ul>
+        <li><a href="things-to-do.html">🎡 [Activity]</a></li>
+        <li><a href="restaurant.html">🍽️ [Restaurant Name]</a></li>
+      </ul>
+      <h3>Day 2 (4 July)</h3>
+      <ul>
+        <li><a href="things-to-do.html">🎡 [Activity]</a></li>
+        <li><a href="restaurant.html">🍽️ [Restaurant Name]</a></li>
+      </ul>
+      <ul>
+        <li><a href="transfer.html">🚖 Transfer to Airport</a></li>
+        <li>Departure: Ryanair FR1472, [Time], Madrid-Barajas (MAD)</li>
+      </ul>
+      <div class="notes">
+        <strong>Notes:</strong>
+        [Any brief notes for Madrid]
       </div>
-      <!-- Copy and customize the block below for each additional day -->
-      <!-- <div class="day">
-        <h2>[Date Range]</h2>
-        <ul>
-          <li><a href="[page].html">[Icon] [Category]: [Brief Detail]</a></li>
-        </ul>
-      </div> -->
+    </section>
+
+    <!-- Lagos -->
+    <section class="destination">
+      <h2>Lagos, Portugal (5 July – 12 July 2025)</h2>
+      <ul>
+        <li>Arrival: [Time]</li>
+        <li><a href="transfer.html">🚖 Transfer to Hotel</a></li>
+        <li><a href="accommodation.html">🏨 Hotel: Belmar Spa & Beach Resort</a></li>
+      </ul>
+      <h3>Day 1 (5 July)</h3>
+      <ul>
+        <li><a href="things-to-do.html">🎡 [Activity]</a></li>
+        <li><a href="restaurant.html">🍽️ [Restaurant Name]</a></li>
+      </ul>
+      <!-- Repeat Day blocks up to Day 7 -->
+      <h3>Day 7 (11 July)</h3>
+      <ul>
+        <li><a href="things-to-do.html">🎡 [Activity]</a></li>
+        <li><a href="restaurant.html">🍽️ [Restaurant Name]</a></li>
+      </ul>
+      <ul>
+        <li><a href="transfer.html">🚖 Transfer to Vale do Lobo</a></li>
+      </ul>
+      <div class="notes">
+        <strong>Notes:</strong>
+        [Any brief notes for Lagos]
+      </div>
+    </section>
+
+    <!-- Vale do Lobo -->
+    <section class="destination">
+      <h2>Vale do Lobo (12 July – 19 July 2025)</h2>
+      <ul>
+        <li>Arrival: [Time]</li>
+        <li><a href="transfer.html">🚖 Transfer to Villa Emily</a></li>
+        <li><a href="accommodation.html">🏨 Villa Emily</a></li>
+      </ul>
+      <h3>Day 1 (12 July)</h3>
+      <ul>
+        <li><a href="things-to-do.html">🎡 [Activity]</a></li>
+        <li><a href="restaurant.html">🍽️ Bamboo Restaurant</a></li>
+      </ul>
+      <h3>Day 5 (16 July)</h3>
+      <ul>
+        <li><a href="things-to-do.html">🎡 [Activity]</a></li>
+        <li><a href="restaurant.html">🍽️ [Restaurant Name]</a></li>
+      </ul>
+      <ul>
+        <li><a href="transfer.html">🚖 Transfer to Faro Airport</a></li>
+        <li>Departure: [Flight], [Time], Faro (FAO)</li>
+      </ul>
+      <div class="notes">
+        <strong>Notes:</strong>
+        [Any brief notes for Vale do Lobo]
+      </div>
     </section>
   </main>
 
@@ -137,3 +230,4 @@
   </footer>
 </body>
 </html>
+
