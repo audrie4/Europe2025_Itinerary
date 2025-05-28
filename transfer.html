@@ -1,45 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Trains and Transfer Details</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transfers - Purcell Family 2025</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #eaf4fc;
+    }
+    td a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    td a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <h1>Train & Car Transfers</h1>
-  <p>This is where your train and transfer information will go.</p>
-  <main>
-  <!-- Transfer Details Section -->
-    <section id="transfer-details">
-      <h2>Train Details</h2>
-      <p>
-        <strong>Bullet Train, Infinita (Barcelona to Madrid):</strong><br>
-        Booking Reference: QA1J0P<br>
-        Date: 3 Jul 2025<br>
-        Departure: 10:45 (arrive 30 mins prior), Barcelona-Sants Station<br>
-        Arrival: 13:22, Madrid-Puerta de Atocha Station<br>
-        Train: Iryo Bullet Train)<br>
-        Dinning: Small meal included<br>
-        Cost: €66.40 each<br>
-        Baggage Allowance: 1 small backpack 36x27x15cm, 1 medium bag 55x35x25cm, 1 large bag 70x55x35cm
-        Cancellation: More than 7 days’ notice, 95% refund. Less than 7 days’ notice, 90% refund
-        If you cannot travel on your train, transfer to the next available train for €10 with a 2 hour limit after the train's departure to obtain a new ticket.
-      </p>
-      <h2>Transfer Details</h2>
-      <p>
-        <strong>Private Transfer (Faro to Lagos):</strong><br>
-        Booking Reference: PT152709010<br>
-        Date: 5 Jul 2025<br>
-        Pick-up: Faro Airport<br>
-        Drop-off: Belmar Spa &amp; Beach Resort, Lagos<br>
-        Vehicle: XL Minivan (8 seats, 8 bags)<br>
-        Cost: €114.39 (incl. taxes &amp; tolls)<br>
-        Cancellation: Up to 24 hours before transfer.
-      </p>
-    </section>
-</main>
-  <a href="index.html">Back to Home</a>
+  <div class="container">
+    <h1>Transfer Details</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Departure Time</th>
+          <th>Pickup Location</th>
+          <th>Transfer Type</th>
+          <th>Booking Ref</th>
+          <th>Baggage</th>
+          <th>Notes</th>
+          <th>Website</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>30 June 2025</td>
+          <td>13:25</td>
+          <td>Barcelona Airport</td>
+          <td>Car Transfer</td>
+          <td>213657552</td>
+          <td>5 x suitcases</td>
+          <td>Talixo via Booking.com</td>
+          <td><a href="https://www.booking.com">booking.com</a></td>
+        </tr>
+        <tr>
+          <td>3 July 2025</td>
+          <td>10:45</td>
+          <td>Barcelona-Sants Station</td>
+          <td>Train - Iryo Infinita Bistró</td>
+          <td>QA1J0P</td>
+          <td>Carry-on + 1 checked per person</td>
+          <td>Includes meal, 100% refundable with Iryo</td>
+          <td><a href="https://iryo.eu">iryo.eu</a></td>
+        </tr>
+        <tr>
+          <td>5 July 2025</td>
+          <td>11:05</td>
+          <td>Madrid Airport</td>
+          <td>Flight - Ryanair</td>
+          <td>FR1472</td>
+          <td>20kg checked per person</td>
+          <td>Seat selected, includes baggage</td>
+          <td><a href="https://www.ryanair.com">ryanair.com</a></td>
+        </tr>
+        <tr>
+          <td>5 July 2025</td>
+          <td>12:15</td>
+          <td>Faro Airport</td>
+          <td>Private Car Transfer</td>
+          <td>RYANAIR TRANSFER</td>
+          <td>Fits all luggage</td>
+          <td>XL Minivan booked via Ryanair</td>
+          <td><a href="https://www.ryanair.com">ryanair.com</a></td>
+        </tr>
+        <tr>
+          <td>12 July 2025</td>
+          <td>TBC</td>
+          <td>Belmar Spa & Beach Resort</td>
+          <td>Private Car Transfer</td>
+          <td>TBC</td>
+          <td>Standard</td>
+          <td>To Vale do Lobo - final transfer</td>
+          <td>TBC</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 </html>
