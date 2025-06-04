@@ -60,6 +60,17 @@
       font-size: 1.1em;
       color: #2980B9;
     }
+    .day ul {
+  list-style: none;    /* remove the default bullet */
+  margin: 0;           /* remove any default top/bottom margin */
+  padding-left: 0;     /* remove the default left indent */
+}
+/* Force the “time” (inside <strong>) to occupy a consistent width */
+.day li strong {
+  display: inline-block;
+  width: 100px; /* adjust as needed so even “10:00–12:00” fits */
+}
+
 
 </style>
 </head>
@@ -99,8 +110,8 @@
   <ul class="info-list">
     <li><strong>Arrival: </strong> Barcelona Airport – 13:25</li>
     <li><strong>Transfer: </strong><a href="transfer.html">Transfer to hotel</a></li>
-    <<li><strong>Accomodation: </strong><a href="accommodation.html">…</a></li
-    <li><strong>Restaurants Near Apt: </strong><a href="barcelona-food.html">Barcelona Food & Cafés Near our Apartment</a></li>
+    <<li><strong>Accomodation: </strong><a href="accommodation.html">Barcelona Accommodation</a></li>
+    <li><strong>Restaurants close to Apt: </strong><a href="barcelona-food.html">Barcelona Food & Cafés Near our Apartment</a></li>
   </ul>
   <div class="day">
     <h3>Day 1 – 30 June</h3>
@@ -149,17 +160,17 @@
       <li><a href="restaurant.html">Restaurant TBC</a></li>
     </ul>
   </div>
-  <div class="day">
-    <h3>Day 2 – 4 July</h3>
-    <ul>
-      <li><strong>8:00</strong>Breakfast at Scarlett Cafe</li>
-      <li><strong>10:00-12:00</strong>Tuk Tuk City Tour <a href="things-to-do.html">Activity</a></li>
-      <li>Lunch</li>
-      <li>Afternoon</li>
-     <li><strong>TBC</strong>Flemenco Show & Dinner at Corral de la Moreria</li>
+<div class="day">
+  <h3>Day 2 – 4 July</h3>
+  <ul>
+    <li><strong>8:00</strong> Breakfast at Scarlett Cafe</li>
+    <li><strong>10:00–12:00</strong> Tuk Tuk City Tour <a href="things-to-do.html">Activity</a></li>
+    <li><strong></strong> Lunch</li>
+    <li><strong></strong> Afternoon</li>
+    <li><strong>TBC</strong> Flamenco Show & Dinner at Corral de la Moreria</li>
+  </ul>
+</div>
 
-    </ul>
-  </div>
   <div class="day">
     <h3>Day 3 – 5 July – Fly to Lagos</h3>
     <ul>
