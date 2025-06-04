@@ -142,22 +142,25 @@
       margin-bottom: 15px;
     }
 
+    /* Override .destination h3 for .day h3: remove indent & border */
     .day h3 {
       margin-top: 0;
       font-size: 1.1em;
       color: #2980b9;
+      padding-left: 0;
+      border-left: none;
     }
 
     .day ul {
-      list-style: none; /* remove default bullet */
-      margin: 0; /* remove any default top/bottom margin */
-      padding-left: 0; /* remove default left indent */
+      list-style: none;    /* remove default bullet */
+      margin: 0;           /* remove any top/bottom margin */
+      padding-left: 0;     /* remove default left indent */
     }
 
     /* Force the “time” (inside <strong>) to occupy a consistent width */
     .day li strong {
       display: inline-block;
-      width: 100px; /* adjust as needed so “10:00 – 12:00” fits */
+      width: 100px; /* adjust if needed so “10:00 – 12:00” fits */
     }
   </style>
 </head>
@@ -194,6 +197,7 @@
   </nav>
 
   <main>
+    <!-- ===== Barcelona Section ===== -->
     <section class="destination">
       <h2>Barcelona (30 June – 3 July 2025)</h2>
       <ul class="info-list">
@@ -252,6 +256,7 @@
       </div>
     </section>
 
+    <!-- ===== Madrid Section ===== -->
     <section class="destination">
       <h2>Madrid (3 July – 5 July 2025)</h2>
       <ul class="info-list">
@@ -312,6 +317,7 @@
       </div>
     </section>
 
+    <!-- ===== Lagos Section ===== -->
     <section class="destination">
       <h2>Lagos, Portugal (5 July – 12 July 2025)</h2>
       <ul class="info-list">
@@ -379,6 +385,7 @@
       </div>
     </section>
 
+    <!-- ===== Vale do Lobo Section ===== -->
     <section class="destination">
       <h2>Vale do Lobo (12 July – 19 July 2025)</h2>
       <ul class="info-list">
